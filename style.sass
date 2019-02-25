@@ -1,0 +1,54 @@
+$cal : #263238
+$angka : #37474f
+$equal : #c2185b
+
+*
+  margin: 0
+  padding: 0
+
+body
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100vh
+  width: 100%
+  background: #f0f0f0
+
+#calculatorBG
+  width: 460px
+  height: 500px
+
+  .Calculator
+    background: $cal
+    justify-content: center
+    align-items: center
+    padding: 20px
+
+    .show
+      width: 90%
+      padding: 20px
+      margin-bottom: 10px
+      border-radius: 10px
+      border : 0
+
+    .angka , .fungsi, .equal
+      width: 80px
+      height: 80px
+      margin: 10px
+      border-radius: 50%
+      border: 0
+      font-size: 1.25em
+
+    .angka
+      background: $angka
+      color: #fff
+
+    .equal
+      background: $equal
+      color: #f0f0f0
+
+    .fungsi
+      color: $equal
+
+    .angka:hover , .fungsi:hover
+      cursor: pointer
